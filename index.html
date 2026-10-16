@@ -28,140 +28,139 @@
     </div>
 
     <div class="part2 container my-5">
-        <h2>Part 2. Bootstrap contact form</h2>
-        <form action="#" method="post">
-            <div class="row g-3">
-                <div class="col-md-6">
-                    <label for="name2" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="name2" name="name2" placeholder="Enter your name" required minlength="3" maxlength="20">
-                    <div class="form-text">From 3 to 20 characters.</div>
-                    <div class="valid-feedback">Looks good!</div>
-                    <div class="invalid-feedback">Name is required (3-20 characters).</div>
-                </div>
-                <div class="col-md-6">
-                    <label for="email2" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email2" name="email2" placeholder="name@example.com" required>
-                    <div class="form-text">We will never share your email.</div>
-                    <div class="valid-feedback">Looks good!</div>
-                    <div class="invalid-feedback">Email is required. Please enter a correct email.</div>
-                </div>
-                <div class="col-12">
-                    <label for="message2" class="form-label">Message</label>
-                    <textarea class="form-control" id="message2" name="message2" rows="4" placeholder="Write your message here" required minlength="10" maxlength="200"></textarea>
-                    <div class="form-text">From 10 to 200 characters.</div>
-                    <div class="valid-feedback">Looks good!</div>
-                    <div class="invalid-feedback">Message is required (at least 10 characters).</div>
-                </div>
-                <div class="col-12">
-                    <button type="submit" class="btn btn-success">Submit</button>
-                </div>
-            </div>
-        </form>
-    </div>
-
-    <div class="part3 container my-5">
-        <h2>Part 3. Registration form</h2>
-        <form action="#" method="post" class="row g-3">
+    <h2>Part 2. Bootstrap contact form</h2>
+    <form action="#" method="post" class="was-validated">
+        <div class="row g-3">
             <div class="col-md-6">
-                <label for="firstName" class="form-label">First Name</label>
-                <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First name" required minlength="2" maxlength="30">
+                <label for="name2" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name2" name="name2" placeholder="Enter your name" required minlength="3" maxlength="20">
                 <div class="valid-feedback">Looks good!</div>
-                <div class="invalid-feedback">First name is required</div>
+                <div class="invalid-feedback">Name is required (3-20 characters).</div>
+                <div class="form-text">From 3 to 20 characters.</div>
             </div>
             <div class="col-md-6">
-                <label for="lastName" class="form-label">Last Name</label>
-                <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last name" required minlength="2" maxlength="30">
+                <label for="email2" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email2" name="email2" placeholder="name@example.com" required>
                 <div class="valid-feedback">Looks good!</div>
-                <div class="invalid-feedback">Last name is required</div>
+                <div class="invalid-feedback">Email is required. Please enter a correct email.</div>
+                <div class="form-text">We will never share your email.</div>
             </div>
             <div class="col-12">
-                <label for="regEmail" class="form-label">Email</label>
-                <input type="email" class="form-control" id="regEmail" name="regEmail" placeholder="name@example.com" required>
+                <label for="message2" class="form-label">Message</label>
+                <textarea class="form-control" id="message2" name="message2" rows="4" placeholder="Write your message here" required minlength="10" maxlength="200"></textarea>
                 <div class="valid-feedback">Looks good!</div>
-                <div class="invalid-feedback">Please enter a correct email.</div>
-            </div>
-            <div class="col-md-6">
-                <label for="password" class="form-label">Password</label>
-                <input type="password" class="form-control" id="password" name="password" placeholder="Password" required minlength="8" maxlength="30">
-                <div class="form-text">Minimum 8 characters.</div>
-                <div class="valid-feedback">Looks good!</div>
-                <div class="invalid-feedback">Password must be at least 8 characters</div>
-            </div>
-            <div class="col-md-6">
-                <label for="confirmPassword" class="form-label">Confirm Password</label>
-                <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" placeholder="Repeat password" required minlength="8" maxlength="30">
-                <div class="form-text">Write the same password again.</div>
-                <div class="valid-feedback">Looks good!</div>
-                <div class="invalid-feedback">Please confirm your password</div>
-            </div>
-            <div class="col-md-6">
-                <fieldset>
-                    <legend class="form-label fs-6">Gender</legend>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="gender" id="genderMale" value="male" required>
-                        <label class="form-check-label" for="genderMale">Male</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="gender" id="genderFemale" value="female" required>
-                        <label class="form-check-label" for="genderFemale">Female</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="gender" id="genderOther" value="other" required>
-                        <label class="form-check-label" for="genderOther">Other</label>
-                    </div>
-                </fieldset>
-            </div>
-            <div class="col-md-6">
-                <fieldset>
-                    <legend class="form-label fs-6">Hobbies</legend>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" name="hobbies" id="hobbyReading" value="reading">
-                        <label class="form-check-label" for="hobbyReading">Reading</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" name="hobbies" id="hobbySports" value="sports">
-                        <label class="form-check-label" for="hobbySports">Sports</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" name="hobbies" id="hobbyMusic" value="music">
-                        <label class="form-check-label" for="hobbyMusic">Music</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" name="hobbies" id="hobbyGaming" value="gaming">
-                        <label class="form-check-label" for="hobbyGaming">Gaming</label>
-                    </div>
-                </fieldset>
-            </div>
-            <div class="col-md-6">
-                <label for="country" class="form-label">Country</label>
-                <select class="form-select" id="country" name="country" required>
-                    <option value="" selected disabled>Choose a country...</option>
-                    <option value="kz">Kazakhstan</option>
-                    <option value="ru">Russia</option>
-                    <option value="uz">Uzbekistan</option>
-                    <option value="kg">Kyrgyzstan</option>
-                    <option value="us">USA</option>
-                    <option value="cn">China</option>
-                    <option value="kr">Korea</option>
-                    <option value="jp">Japan</option>
-                    <option value="other">Other</option>
-                </select>
-                <div class="valid-feedback">Looks good!</div>
-                <div class="invalid-feedback">Please select a country.</div>
-            </div>
-            <div class="col-12">
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="terms" name="terms" required>
-                    <label class="form-check-label" for="terms">I agree to the terms and conditions</label>
-                    <div class="valid-feedback">Looks good!</div>
-                    <div class="invalid-feedback">You must agree before submitting.</div>
-                </div>
+                <div class="invalid-feedback">Message is required (at least 10 characters).</div>
+                <div class="form-text">From 10 to 200 characters.</div>
             </div>
             <div class="col-12">
                 <button type="submit" class="btn btn-success">Submit</button>
-                <button type="reset" class="btn btn-outline-secondary">Reset</button>
             </div>
-        </form>
-    </div>
+        </div>
+    </form>
+</div>
+    <div class="part3 container my-5">
+    <h2>Part 3. Registration form</h2>
+    <form action="#" method="post" class="row g-3 was-validated">
+        <div class="col-md-6">
+            <label for="firstName" class="form-label">First Name</label>
+            <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First name" required minlength="2" maxlength="30">
+            <div class="valid-feedback">Looks good!</div>
+            <div class="invalid-feedback">First name is required</div>
+        </div>
+        <div class="col-md-6">
+            <label for="lastName" class="form-label">Last Name</label>
+            <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last name" required minlength="2" maxlength="30">
+            <div class="valid-feedback">Looks good!</div>
+            <div class="invalid-feedback">Last name is required</div>
+        </div>
+        <div class="col-12">
+            <label for="regEmail" class="form-label">Email</label>
+            <input type="email" class="form-control" id="regEmail" name="regEmail" placeholder="name@example.com" required>
+            <div class="valid-feedback">Looks good!</div>
+            <div class="invalid-feedback">Please enter a correct email.</div>
+        </div>
+        <div class="col-md-6">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" name="password" placeholder="Password" required minlength="8" maxlength="30">
+            <div class="valid-feedback">Looks good!</div>
+            <div class="invalid-feedback">Password must be at least 8 characters</div>
+            <div class="form-text">Minimum 8 characters.</div>
+        </div>
+        <div class="col-md-6">
+            <label for="confirmPassword" class="form-label">Confirm Password</label>
+            <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" placeholder="Repeat password" required minlength="8" maxlength="30">
+            <div class="valid-feedback">Looks good!</div>
+            <div class="invalid-feedback">Please confirm your password</div>
+            <div class="form-text">Write the same password again.</div>
+        </div>
+        <div class="col-md-6">
+            <fieldset>
+                <legend class="form-label fs-6">Gender</legend>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="gender" id="genderMale" value="male" required>
+                    <label class="form-check-label" for="genderMale">Male</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="gender" id="genderFemale" value="female" required>
+                    <label class="form-check-label" for="genderFemale">Female</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="gender" id="genderOther" value="other" required>
+                    <label class="form-check-label" for="genderOther">Other</label>
+                </div>
+            </fieldset>
+        </div>
+        <div class="col-md-6">
+            <fieldset>
+                <legend class="form-label fs-6">Hobbies</legend>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" name="hobbies" id="hobbyReading" value="reading">
+                    <label class="form-check-label" for="hobbyReading">Reading</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" name="hobbies" id="hobbySports" value="sports">
+                    <label class="form-check-label" for="hobbySports">Sports</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" name="hobbies" id="hobbyMusic" value="music">
+                    <label class="form-check-label" for="hobbyMusic">Music</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" name="hobbies" id="hobbyGaming" value="gaming">
+                    <label class="form-check-label" for="hobbyGaming">Gaming</label>
+                </div>
+            </fieldset>
+        </div>
+        <div class="col-md-6">
+            <label for="country" class="form-label">Country</label>
+            <select class="form-select" id="country" name="country" required>
+                <option value="" selected disabled>Choose a country...</option>
+                <option value="kz">Kazakhstan</option>
+                <option value="ru">Russia</option>
+                <option value="uz">Uzbekistan</option>
+                <option value="kg">Kyrgyzstan</option>
+                <option value="us">USA</option>
+                <option value="cn">China</option>
+                <option value="kr">Korea</option>
+                <option value="jp">Japan</option>
+                <option value="other">Other</option>
+            </select>
+            <div class="valid-feedback">Looks good!</div>
+            <div class="invalid-feedback">Please select a country.</div>
+        </div>
+        <div class="col-12">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="terms" name="terms" required>
+                <label class="form-check-label" for="terms">I agree to the terms and conditions</label>
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">You must agree before submitting.</div>
+            </div>
+        </div>
+        <div class="col-12">
+            <button type="submit" class="btn btn-success">Submit</button>
+            <button type="reset" class="btn btn-outline-secondary">Reset</button>
+        </div>
+    </form>
+</div>
 </body>
 </html>

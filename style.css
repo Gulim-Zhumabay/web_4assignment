@@ -1,0 +1,47 @@
+body {
+    background-color: #FEFAF3;
+    color: black;
+    font-family: Arial, sans-serif;
+}
+h1, h2 {
+    text-align: center;
+}
+h2 {
+    font-size: 24px;
+}
+.part1 {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.part1 label {
+    display: block;
+    margin-bottom: 8px;
+}
+.part1 input, .part1 textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+.part2, .part3 {
+    max-width: 800px;
+}
+.part2 .form-control:invalid, .part3 .form-control:invalid, .part3 .form-select:invalid {
+    border-color: red;
+}
+.part2 .form-control:valid, .part3 .form-control:valid, .part3 .form-select:valid {
+    border-color: green;
+}
+.part2 .form-control:invalid ~ .invalid-feedback, .part3 .form-control:invalid ~ .invalid-feedback, .part3 .form-select:invalid ~ .invalid-feedback, .part3 .form-check-input:invalid ~ .invalid-feedback {
+    display: block;
+}
+.part2 .form-control:valid ~ .valid-feedback, .part3 .form-control:valid ~ .valid-feedback, .part3 .form-select:valid ~ .valid-feedback, .part3 .form-check-input:valid ~ .valid-feedback {
+    display: block;
+}
+.part3 .form-check-input:invalid ~ .form-check-label {
+    color: red;
+}
+.part3 .form-check-input:valid ~ .form-check-label {
+    color: green;
+}
